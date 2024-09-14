@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import {Taskscontext} from '../context/Taskscontext'
 
-const Header = (props) => {
-    const { tasks } = props;
+const Header = () => {
+  const {tasks} = useContext(Taskscontext)
   return (
     <div><div className="hero px-6 w-96 mb-4 text-center border border-white flex items-center justify-between py-10 rounded-lg">
     <div className="text text-left">
